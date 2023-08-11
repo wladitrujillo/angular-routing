@@ -12,7 +12,7 @@ import { filter, tap } from 'rxjs/operators';
 export class CoursesCardListComponent implements OnInit {
 
   @Input()
-  courses: Course[] = [];
+  courses: Course[] | null = [];
 
   @Output()
   private coursesChanged = new EventEmitter();
